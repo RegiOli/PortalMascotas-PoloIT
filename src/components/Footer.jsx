@@ -5,66 +5,148 @@ import '../estilos/footer.css';
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <!DOCTYPE html>
+<html lang="es">
 
-        <div className="footer-section footer-brand">
-          <Link to="/" className="footer-logo">Portal de Mascotas 🐾</Link>
-          <p className="footer-slogan">Tu mejor amigo te esta esperando!</p>
-          <div className="social-icons">
-            <a href="https://www.facebook.com/tupaginadefacebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <FaFacebook />
-            </a>
-            <a href="https://www.instagram.com/tucuentaoficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <FaInstagram />
-            </a>
-            <a href="https://twitter.com/tucuentaoficial" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <FaTwitter />
-            </a>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Footer Estilo Redes Sociales</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            background-color: #d9ab86;
+            /* color beige */
+            color: #5a2800;
+            /* color marrón */
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 40px 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            margin: 10px;
+        }
+
+        .footer-section h3,
+        .footer-section p,
+        .footer-section a {
+            margin: 10px 0;
+            text-decoration: none;
+            color: #5a2800;
+        }
+
+        .social-icons img {
+            width: 36px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .links a {
+            display: block;
+            margin: 6px 0;
+            font-weight: bold;
+        }
+
+        .newsletter {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            border: 2px solid #5a2800;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+
+        .newsletter h3 {
+            margin-top: 0;
+            color: #5a2800;
+        }
+
+
+        .newsletter input[type="email"],
+        .newsletter button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            /* separación inferior uniforme */
+            border-radius: 10px;
+            font-size: 16px;
+            display: block;
+            text-align: center;
+        }
+
+        .newsletter input[type="email"] {
+            border: 1px solid #ccc;
+
+
+        }
+
+        .newsletter button {
+            background-color: #c76575;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .newsletter button:hover {
+            background-color: #a74e5f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer class="footer">
+
+        <!-- Redes Sociales -->
+        <div class="footer-section social">
+            <p style="text-align: center;"><strong>¡Te esperamos en nuestras<br>Redes Sociales!</strong></p>
+            <div class="social-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                    alt="Facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg" alt="X">
+            </div>
         </div>
 
-        <div className="footer-section footer-links">
-          <h3>Navegación</h3>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/adopciones">Adopciones</Link></li>
-            <li><Link to="/nosotros">Nosotros</Link></li>
-            <li><Link to="/contacto">Contacto</Link></li>
-            <li><Link to="/login">Mi Cuenta</Link></li>
-          </ul>
+        <!-- Enlaces -->
+        <div class="footer-section links">
+            <a href="#">Nosotros</a>
+            <a href="#">Jornadas</a>
+            <a href="#">Donaciones</a>
+            <a href="#">Contacto</a>
         </div>
 
-        <div className="footer-section footer-contact">
-          <h3>Contacto</h3>
-          <p><FaMapMarkerAlt /> Calle Ficticia 123, Buenos Aires, Argentina</p>
-          <p><FaPhone /> +54 9 11 1234 5678</p>
-          <p><FaEnvelope /> info@portaldemascotas.com.ar</p>
+        <!-- Novedades -->
+        <div class="newsletter">
+            <h3 style="text-align: center;">¡Recibe las novedades en tu correo!</h3>
+            <input type="email" placeholder="Ingresa tu correo">
+            <button>¡SUSCRIBIRME!</button>
         </div>
 
-        <div className="footer-section footer-map">
-          <h3>Dónde Encontrarnos</h3>
-         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.40939023069!2d-58.852431799999995!3d-34.61332765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc8f5539f3796d%3A0xc49d37e2a225301a!2sMarcos%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716382025123!5m2!1ses-419!2sar"
-            width="100%" // Para que sea responsive
-            height="250" // Altura fija
-            style={{ border: 0, borderRadius: '10px' }} 
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Ubicación de nuestra tienda" 
-          ></iframe>
-          <p>Visítanos o encuéntranos en Google Maps.</p>
+        <!-- Leyenda Final-->
+        <div className="footer-bottom">
+            <p style="text-align: center;"> <i>Portal de Mascotas 🐾 - Todos los derechos reservados.</i></p>
+            <p style="text-align: center;"><i>Hecho con ❤️ para los amantes de las mascotas</i></p>
         </div>
 
-      </div>
 
-      <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Portal de Mascotas 🐾 - Todos los derechos reservados.</p>
-        <p>Hecho con ❤️ para los amantes de las mascotas</p>
-      </div>
+
     </footer>
-  );
-}
+
+</body>
+
+</html>
+
 
 export default Footer;
