@@ -1,0 +1,86 @@
+.btn-toggle-filtros {
+  background-color: #b07b50;
+  color: white;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.btn-toggle-filtros:hover {
+  background-color: #8c5e3c;
+}
+.filtro-sidebar {
+  max-width: 220px;
+  width: 100%;
+}
+/* Ocultar ícono toggle default */
+.filtro-sidebar .accordion-button::after {
+  display: none;
+}
+
+/* Header: texto */
+.filtro-sidebar .filtro-header {
+  cursor: default;
+  font-weight: 600;
+  color: #8c5e3c;
+  background-color: #fff6f0;
+  font-family: 'Segoe UI', sans-serif;
+  padding-right: 0.5rem;
+}
+
+/* Ícono: alineado a la derecha y más compacto */
+.filtro-sidebar .toggle-icon {
+  margin-left: auto;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.filtro-sidebar .toggle-icon i {
+  font-size: 1.1rem;
+  color: #b07b50;
+  transition: transform 0.2s ease;
+  user-select: none;
+}
+
+/* Rotación al expandir */
+.filtro-sidebar .accordion-item.show .toggle-icon i {
+  transform: rotate(180deg);
+  color: #4a2e1b;
+}
+
+/* Checkbox labels */
+.filtro-sidebar .form-check-label {
+  font-size: 0.95rem;
+  color: #4a2e1b;
+  font-weight: 500;
+}
+
+/* Checkbox checked colors */
+.filtro-sidebar .form-check-input:checked {
+  background-color: #b07b50;
+  border-color: #b07b50;
+}
+
+/* Botón limpiar */
+.filtro-sidebar .btn-outline-secondary {
+  border-color: #b07b50;
+  color: #b07b50;
+  font-weight: 600;
+}
+
+.filtro-sidebar .btn-outline-secondary:hover {
+  background-color: #b07b50;
+  color: white;
+}
+
+/* Responsive suave para mobile */
+@media (max-width: 768px) {
+  .filtro-sidebar {
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+}

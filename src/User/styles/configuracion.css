@@ -1,0 +1,193 @@
+/* Contenedor general */
+.config-container {
+  width: 100%;
+  max-width: 700px;
+  background-color: #e2bda5;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+/* Contenedor exterior como wrapper general */
+.config-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Títulos */
+.config-container h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #3a3a3a;
+}
+
+.config-container h2 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Inputs y selects */
+.config-container input,
+.config-container select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Etiquetas */
+.config-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #000;
+}
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+label input[type="checkbox"] {
+  margin: 0;
+  transform: translateY(33px); /* Ajuste fino opcional */
+}
+
+/* Checkbox en notificaciones */
+.config-container input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Botón de guardar */
+.config-container button[type="submit"] {
+  height: 40px;
+  background-color: #cb6c77;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.config-container button[type="submit"]:hover {
+  background-color: #a34e58;
+}
+/* Separación entre los botones */
+.config-container .btn-delete-account {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Opcional: más separación general entre secciones */
+.config-container section {
+  margin-bottom: 2rem;
+}
+
+/* Botón de eliminar cuenta */
+.config-container .btn-delete-account {
+  background-color: transparent;
+  color: #b30000;
+  border: 1px solid #b30000;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.config-container .btn-delete-account:hover {
+  background-color: #b30000;
+  color: white;
+}
+/* Fondo oscuro detrás del modal */
+.modal-backdrop {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenedor del modal */
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Botones dentro del modal */
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.modal-buttons button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-cancel {
+  background-color: #ccc;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background-color: #999;
+  color: white;
+}
+
+.btn-confirm {
+  background-color: #b30000;
+  color: white;
+}
+
+.btn-confirm:hover {
+  background-color: #7f0000;
+}
+
+/* Responsive para móviles */
+@media (max-width: 575.98px) {
+  .config-container input,
+  .config-container select {
+    font-size: 0.875rem;
+  }
+
+  .config-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .config-container h2 {
+    font-size: 1rem;
+  }
+}

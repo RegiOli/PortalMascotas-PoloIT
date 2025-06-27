@@ -1,0 +1,168 @@
+.home-hero {
+  background: url('/public/fondoInicio.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.home-acciones {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn-voluntariado,
+.btn-transito {
+  background-color: #bb6b75;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voluntariado:hover,
+.btn-transito:hover {
+  background-color: #a3535e;
+}
+
+.home-nosotros {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nosotros-wrapper {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nosotros-corazon {
+  max-width: 300px;
+  height: auto;
+}
+
+.nosotros-caja {
+  background: linear-gradient(to right, #735F4D80, #D9B391);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.nosotros-caja h2 {
+  font-size: 1.8rem;
+  color: #8c4c32;
+  margin-bottom: 1rem;
+}
+
+.nosotros-caja p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.home-banner {
+  background-color: #f0d3b8;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 1.1rem;
+  color: #8c4c32;
+  font-weight: 500;
+}
+
+.home-banner strong {
+  display: block;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  color: #a3533b;
+}
+.custom-pagination .page-item {
+  position: relative;
+  margin: 0 0.4rem;
+}
+
+/* Botón con forma hexagonal y fondo blanco */
+.custom-pagination .page-link {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(191, 101, 118, 1);
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    5% 75%,
+    5% 25%
+  );
+  padding: 0;
+  border: none;
+}
+
+/* El borde rosa es un pseudo-elemento detrás del hexágono */
+.custom-pagination .page-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(191, 101, 118, 1);
+  clip-path: inherit;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+/* Hover: fondo rosa fuerte (pseudo se oculta), texto blanco */
+.custom-pagination .page-link:hover {
+  background-color: white;
+  color: rgb(191, 101, 118, 1);
+}
+
+/* Hover: ocultamos borde para simular que se rellena */
+.custom-pagination .page-link:hover::before {
+  background-color: transparent;
+}
+
+/* Active (página actual) */
+.custom-pagination .page-item.active .page-link {
+  background-color: white;
+  color: rgb(191, 101, 118, 1);
+}
+
+.custom-pagination .page-item.active .page-link::before {
+  background-color: transparent;
+}
+
+@media (max-width: 576px) {
+  .custom-pagination .page-link {
+    width: 40px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+}

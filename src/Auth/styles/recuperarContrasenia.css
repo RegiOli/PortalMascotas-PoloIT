@@ -1,0 +1,130 @@
+.paw-icon {
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  color: black;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.mailbox-icon {
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  color: black;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: #fefefe;
+}
+
+.form-container {
+  max-width: 900px;
+  width: 90%;
+  background-color: #e2bda5;
+  padding: 2.5rem;
+  border-radius: 25px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-label {
+  font-weight: light;
+  color: #000;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  width: 100%;
+  height: 40px;
+  background-color: #cb6c77;
+  border: none;
+  border-radius: 8px;
+  font-weight: lighter;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #a34e58;
+}
+
+.btn-secondary {
+color: #000;
+text-decoration: none;
+font-size: 0.9rem;
+display: flex;
+align-items: center;
+}
+
+.btn-secondary:hover {
+  background-color: #c3b5b7;
+} 
+.arrow-icon {
+width: 16px;
+height: 16px;
+margin-right: 0.5rem;
+}
+
+.message {
+margin-top: 1rem;
+font-weight: bold;
+}
+
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Placeholder */
+::placeholder {
+  font-size: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .form-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  ::placeholder {
+    font-size: 0.75rem;
+  }
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.mensaje-bienvenida {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  background-color: #eaffea;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #a6d6a6;
+}

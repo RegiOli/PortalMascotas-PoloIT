@@ -23,10 +23,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # Python
-__pycache__/
+**/__pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.pyc
 
 # Entornos virtuales
 backend/venv/

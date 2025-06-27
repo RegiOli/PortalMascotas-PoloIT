@@ -1,0 +1,227 @@
+.perfil-usuario h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8b4a23;
+  margin: 0.5rem 0;
+}
+
+.perfil-usuario p {
+  margin: 0.3rem 0;
+  color: #4e2f1d;
+  font-size: 1rem;
+}
+
+.perfil-usuario p strong {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #aa4b6b;
+}
+.mis-publicaciones {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.publicaciones-header {
+  background-color: rgba(217,179,145,0.5);
+  padding: 2rem;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.publicaciones-header h1 {
+  font-size: 2rem;
+  color: #8b4a23;
+}
+
+.publicaciones-header p {
+  font-size: 1rem;
+  color: #4e2f1d;
+}
+
+.huella-decorativa {
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  background: url('/public/huellitas.png') no-repeat center/contain;
+}
+
+.publicaciones-content {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.perfil-usuario {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f4e0cb;
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-icon {
+  font-size: 2rem;
+}
+
+.iniciales {
+  background-color: #aa4b6b;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  line-height: 60px;
+  margin-top: 0.5rem;
+}
+
+.lista-publicaciones {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta-mascota {
+  background-color: #f4e0cb;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.tarjeta-mascota img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.info-mascota h3 {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.info-mascota p{
+  font-weight: bold;
+
+}
+.info-mascota .estado {
+  font-weight: bold;
+  color: #8b4a23;
+}
+
+.acciones {
+  margin-top: 0.5rem;
+}
+
+.editar, .eliminar {
+  margin: 0.25rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.editar {
+  background-color: #c14c86;
+  color: white;
+}
+
+.eliminar {
+  background-color: #c14c86;
+  color: white;
+}
+.modal-contenido h2 {
+  margin-bottom: 1rem;
+  color: white;
+  text-align: center;
+}
+.modal-contenido form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem; /* espacio entre columnas y filas */
+}
+.modal-contenido label{
+  color: white;
+}
+.modal-contenido input,
+.modal-contenido select {
+  width: 100%; /* para que llenen la columna */
+  box-sizing: border-box;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #444;
+  background-color: #333;
+  color: white;
+  transition: border-color 0.3s;
+}
+
+.modal-contenido input:focus,
+.modal-contenido select:focus {
+  outline: none;
+  border-color: #0f0;
+  box-shadow: 0 0 6px #0f0;
+}
+
+/* Para los botones, que queden debajo del grid ocupando toda la fila */
+
+.modal-contenido .botones {
+  grid-column: 1 / -1; /* ocupa las 2 columnas */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.modal-contenido button[type="submit"],
+.modal-contenido button[type="button"] {
+  flex: 1;
+  padding: 0.7rem 0;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.modal-contenido button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.modal-contenido button[type="submit"]:hover {
+  background-color: #1e7e34;
+}
+
+.modal-contenido button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+.modal-contenido button[type="button"]:hover {
+  background-color: #a71d2a;
+}
+.avatar-imagen {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}

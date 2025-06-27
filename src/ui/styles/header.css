@@ -1,0 +1,249 @@
+/* ========== NAVBAR PRINCIPAL ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D9B391;
+  padding: 1rem 3rem;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.navbar-logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #733702;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  margin-left: 1.5rem;
+  object-fit: contain;
+}
+
+/* ========== LINKS Y DROPDOWNS ========== */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a,
+.navbar-icons a,
+.dropdown span {
+  text-decoration: none;
+  color: #733702;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.navbar-links li a:hover,
+.navbar-icons a:hover,
+.dropdown:hover span {
+  color: #BF702A;
+  transform: translateY(-3px);
+}
+
+/* ========== ÍCONOS Y BOTONES ========== */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-right: 1.4rem;
+}
+
+.logout-icon,
+.cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.logout-icon:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+.user-saludo {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* ========== BOTÓN PUBLICAR ========== */
+.btn-publicar {
+  margin-left: 15px;
+  padding: 6px 12px;
+  background: linear-gradient(45deg, #9b808e, #c66398);
+  color: white !important;
+  border: none;
+  border-radius: 25px;
+  font-weight: 200;
+  font-size: 0.45rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.btn-publicar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.5);
+}
+
+.linea-arriba,
+.linea-abajo {
+  display: block;
+}
+
+/* ========== BOTÓN LOGIN EN CÍRCULO ========== */
+.login-button {
+  background-color: #f8f1ea;
+  border-radius: 50%;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.login-icon {
+  font-size: 1.5rem;
+  color: #733702;
+  transition: color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #fde9e5;
+}
+
+.login-button:hover .login-icon {
+  color: #c0392b;
+}
+
+/* ========== DROPDOWN GENERAL ========== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-btn,
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: #733702;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #D9B391;
+  min-width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.dropdown-menu li a,
+.dropdown-menu li button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  width: 100%;
+  text-decoration: none;
+  color: #333;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li button:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-logout {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* ========== HAMBURGUESA (Responsive) ========== */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #733702;
+  cursor: pointer;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-icons {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    gap: 1.5rem;
+  }
+}

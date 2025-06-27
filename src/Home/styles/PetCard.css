@@ -1,0 +1,160 @@
+.pet-card .card-body {
+  background-color: #D9B391;
+}
+.pet-card {
+  width: 300px;
+  background-color: #D9B391;
+  border: none;
+  border-radius: 1rem; /* un poco más redondeado */
+  overflow: hidden; /* para que las esquinas corten bien la imagen */
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+
+.pet-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.estado-header {
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+
+.descripcion {
+  font-size: 0.9rem;
+}
+
+.pet-img {
+  height: 250px;
+  object-fit: cover;
+}
+.heart-icon-estado {
+  color: #e63946; /* rojo intenso, más emoji */
+  font-size: 1.3rem;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.estado-header {
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.descripcion {
+  font-size: 0.9rem;
+}
+
+.text {
+  color: white;
+  cursor: pointer;
+}
+
+/* Botón Adoptar marrón oscuro */
+.btn-marron {
+  background-color: #5C4033 !important; /* Marrón oscuro */
+  color: white !important;
+  border-radius: 30px !important;
+  border: none;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-marron:hover {
+  background-color: #472d22 !important;
+}
+
+/* Botones íconos sin fondo y marrones */
+.icon-btn {
+  background-color: transparent !important;
+  border: none !important;
+  color: #5C4033 !important;
+  font-size: 1.3rem;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  border-radius: 50%;
+}
+
+.icon-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: rgba(92, 64, 51, 0.15);
+}
+/* ======= MODAL ESTILOS ======= */
+
+.modal-header {
+  background-color: #f7e3d0;
+  border-bottom: 1px solid #dcbfa6;
+  color: #8b4513;
+}
+.ver-mas {
+  color: #fff; /* Blanco */
+  font-weight: 500;
+  cursor: pointer;
+
+}
+
+.ver-mas:hover {
+  color: #f0f0f0; /* Un blanco más suave al pasar el mouse */
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #a0522d;
+}
+
+.modal-body {
+  background-color: #fff8f2;
+  color: #8b4513;
+  font-size: 1rem;
+  padding: 2rem 1.5rem;
+  border-radius: 0 0 12px 12px;
+}
+
+.modal-body img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.modal-body p {
+  margin: 0.5rem 0;
+}
+
+.modal-body strong {
+  color: #a0522d;
+}
+
+.modal-footer {
+  background-color: #f7e3d0;
+  border-top: 1px solid #dcbfa6;
+}
+
+.btn-outline-primary {
+  border-color: #a0522d;
+  color: #a0522d;
+}
+
+.btn-outline-primary:hover {
+  background-color: #a0522d;
+  color: white;
+}

@@ -1,0 +1,32 @@
+.publicar-wrapper {
+  background: linear-gradient(135deg, #fdf6e3, #ffe0e0);
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.publicar-titulo {
+  color: #aa4b6b;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.publicar-subtitulo {
+  color: #444;
+  font-size: 1.2rem;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.publicar-contenido {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 700px;
+}

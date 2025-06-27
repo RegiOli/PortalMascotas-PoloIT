@@ -1,0 +1,52 @@
+/* Not Found */
+.notfound-container {
+  background-image: url("../../../public/imagenContacto.jpg"); 
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.notfound-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.notfound-content h1 {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  color: #cb6c77;
+}
+
+.notfound-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.notfound-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.notfound-content button {
+  padding: 0.8rem 1.5rem;
+  background-color: #cb6c77;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.notfound-content button:hover {
+  background-color: #cb6c77;
+}

@@ -1,0 +1,197 @@
+.perfil-wrapper {
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.perfil-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  color: #333;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-foto img,
+.icono-usuario {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #eee;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.perfil-estadisticas {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+}
+
+.perfil-estadisticas div {
+  text-align: center;
+}
+
+.perfil-botones button {
+  background-color: #ba68c8;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.perfil-botones button:hover {
+  background-color: #9c27b0;
+}
+
+.cerrar-sesion {
+  background-color: #e53935;
+}
+
+.cerrar-sesion:hover {
+  background-color: #b71c1c;
+}
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+
+/* Modal Container */
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Título */
+.modal-content h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+/* Etiquetas e inputs */
+.modal-content label {
+  display: block;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.modal-content input:focus {
+  border-color: #ba68c8;
+  outline: none;
+}
+
+/* Botones */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.modal-buttons button {
+  flex: 1;
+  margin: 0 0.5rem;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-buttons button:first-child {
+  background-color: #ba68c8;
+  color: white;
+}
+
+.modal-buttons button:first-child:hover {
+  background-color: #d082de;
+}
+
+.modal-buttons button:last-child {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.modal-buttons button:last-child:hover {
+  background-color: #bdbdbd;
+}
+.perfil-estadisticas div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfil-estadisticas strong {
+  font-size: 2.5rem;
+  color: #6a1b9a; /* púrpura elegante */
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.05em;
+}
+
+.perfil-estadisticas span {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
